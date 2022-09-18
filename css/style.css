@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos Generales */
+
+body {
+  background-color: #3668aa !important;
+  font-family: "Roboto";
+}
+
+/* Diseño de Botones */
+
+/* From uiverse.io */
+button {
+  padding: 0.3em 1em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 100;
+  color: #000;
+  background-color: rgb(11, 181, 197);
+  border: none;
+  border-radius: 55px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #df16df;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+/* Estilos de Header Mobile */
+
+header {
+  display: none;
+}
+
+.header:hover {
+  background-color: #df16df;
+}
+
+/* Estilos de Main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+main h2 {
+  margin: 1rem;
+}
+
+main h2 span {
+  display: block;
+}
+
+/* Estilos de Section */
+
+section {
+  display: none;
+}
+
+/* Estilos de Footer */
+
+footer h4 {
+  text-align: center;
+}
+
+/* media queries */
+@media screen and (min-width: 576px) {
+  header {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+
+  header h1 {
+    margin-right: 30rem;
+    padding: 5px;
+  }
+
+  /* Estilos nuevos del Main */
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: auto;
+    grid-template-areas: "p img" "h2 img" "p-dos img" "boton img";
+    justify-content: center;
+    justify-items: center;
+    padding: 1rem;
+  }
+
+  main p {
+    grid-area: p;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  main img {
+    grid-area: img;
+    width: 50%;
+    border: 2px solid rgb(61, 165, 146);
+  }
+
+  main h2 {
+    grid-area: h2;
+    font-size: 1.7rem;
+  }
+  main .p-dos {
+    grid-area: p-dos;
+  }
+
+  main .boton {
+    grid-area: boton;
+  }
+
+  .img img {
+    animation-name: animacion;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes animacion {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(50px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  /* Estilos de Section */
+
+  section {
+    display: block;
+    display: flex;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  section div img {
+    width: 20%;
+    border-radius: 15%;
+  }
+
+  /* Estilos de Footer */
+
+  footer {
+    margin-top: 1.3rem;
+    font-size: 1.3rem;
+  }
+}
