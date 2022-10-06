@@ -1,0 +1,78 @@
+@media screen and (min-width: 576px) {
+  header {
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr 1);
+    grid-template-areas: "h2 img" "h3 img" "p-dos img" "boton img";
+    justify-content: center;
+    justify-items: center;
+    padding: 1rem;
+    align-items: center;
+
+    h2 {
+      grid-area: h2;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    h3 {
+      grid-area: h3;
+    }
+    span {
+      grid-area: span;
+    }
+    .p-dos {
+      grid-area: p-dos;
+    }
+    img {
+      grid-area: img;
+      width: 50%;
+      border: 2px;
+    }
+    .boton {
+      grid-area: boton;
+    }
+  }
+  .section1 {
+    display: none;
+  }
+
+  .img2 img {
+    animation-name: animacion;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes animacion {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(50px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .section2 {
+    display: block;
+    display: flex;
+    text-align: center;
+  }
+
+  /* Estilos de Footer */
+
+  footer {
+    height: 70px;
+    margin-top: 1.3rem;
+    font-size: 1.3rem;
+  }
+}

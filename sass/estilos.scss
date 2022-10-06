@@ -1,0 +1,31 @@
+//variables
+@import "../sass/secundarios/patrials";
+
+@import "../sass/secundarios/variables";
+
+/* Estilos Generales */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: $color-principal;
+}
+
+main {
+  text-align: center;
+}
+
+.section1 {
+  text-align: center;
+  .img2 {
+    justify-content: center;
+  }
+}
+
+.section2 {
+  display: none;
+  img {
+    width: 50%;
+  }
+}
+
+@import "../sass/secundarios/mediaqueries.scss";
