@@ -4,6 +4,10 @@
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1671c1 !important; }
+
 /* Diseño de Botones */
 button {
   padding: 0.3em 1em;
@@ -30,10 +34,6 @@ button:active {
   transform: translateY(-1px); }
 
 /* Estilos Generales */
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: #3668aa; }
-
 main {
   text-align: center; }
 
